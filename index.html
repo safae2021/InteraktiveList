@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Interactive Liste</title>
+     </head>
+<head>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+
+<body>
+     <div class="wrapper">
+
+     	<section id="banner">
+
+             
+               <div class="inner"  id="innerSection">
+
+                    <header>
+                         <h2>Destination</h2>
+                    </header>
+                    <p>Choose your<strong> Next</strong> Destinations
+                     </p>
+                    <footer>
+                         <ul class="buttons stacked">
+                              <button type="button" class="btn btn-outline" onclick="replaceInnerWithListSection()">Show the cities</button>
+                         </ul>
+                    </footer>
+
+               </div>
+
+          </section>
+
+          <ul class="card" id="listSection" style="display: none;">
+             <div class="item-content">
+                <input type="checkbox" class="checkbox" name="destination"  onclick="updateSelectedItems(this)">
+                <h3>Paris</h3>
+                <p>City of light</p>
+                <img src="images/paris.jpg" alt="Item 1">                   
+             </div>
+             <!-- Add more list items as needed -->
+             <div class="item-content">
+                <input type="checkbox" class="checkbox" name="destination" onclick="updateSelectedItems(this)">
+                <h3>Berlin</h3>
+                <p>The greenest city</p>
+                <img src="images/berlin.jpg" alt="Item 2">
+             </div>
+             <div class="item-content">
+                <input type="checkbox" class="checkbox" name="destination" onclick="updateSelectedItems(this)">
+                <h3>Tokyo</h3>
+                <p>A Vibrant Metropolis</p>
+                <img src="images/tokyo.webp" alt="Item 2">
+             </div>
+             <div class="item-content">
+                <input type="checkbox" class="checkbox" name="destination" onclick="updateSelectedItems(this)">
+                <h3>Marrakech</h3>
+                <p>The red city</p>
+                <img src="images/Marrakech.jpg" alt="Item 2">
+             </div>
+             <div class="item-content">
+                <input type="checkbox" class="checkbox" name="destination" onclick="updateSelectedItems(this)">
+                <h3>New York</h3>
+                <p>City of diversity</p>
+                <img src="images/newyork.jpeg" alt="Item 2">
+             </div>
+          </ul>
+       </div>
+      
+    
+    <script src="script.js"></script>
+</body>
+</html>
